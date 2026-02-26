@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(48, 19, 64);
+  background: url("./videos/1.mp4");
+  overflow: hidden;
+}
+#bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("") center/cover no-repeat;
+  background-image: url("./img/3.jpeg");
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.mainbox {
+  /* margin-left: 40%; */
+  height: 550px;
+  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(54, 45, 45, 0.05);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgb(100, 90, 90);
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.uper {
+  background: #111;
+  padding: 4px;
+  border-radius: 20px;
+  display: flex;
+}
+/* #signbtn{
+    background-color: black;
+    border: 2px solid #333;
+} */
+
+.uper span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.uper .highlight:hover {
+  background: #504848;
+  color: white;
+}
+
+.close {
+  font-size: 14px;
+  background: #222;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+input:hover {
+  border: 1px solid rgb(239, 230, 230);
+}
+.name-row {
+  display: flex;
+  gap: 10px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.phone input {
+  border: none;
+  background: transparent;
+  margin: 0;
+}
+
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.create-btn:hover {
+  border: 1px solid black;
+}
+
+.divider {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin: 15px 0;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.socialbutton {
+  width: 200px;
+  /* padding:20px; */
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 18px;
+}
+.socialbutton:hover {
+  border: 1px solid lightsteelblue;
+}
+.socialbutton1 {
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 18px;
+}
+.socialbutton1:hover {
+  border: 1px solid lightsteelblue;
+}
+
+.ico1 {
+  /* padding: px; */
+  height: 40px;
+  margin-left: 35%;
+  margin-top: 5px;
+}
+.ico2 {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  margin-left: 35%;
+}
+
+.terms {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;  
+  font-size: 12px;
+  margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #333; 
+}
+.divider:not(:empty)::before {
+  margin-right: .5em;
+}
+.divider:not(:empty)::after {
+  margin-left: .5em;
+}
+
+
+
+/* Phone Size */
+@media (max-width: 600px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .mainbox {
+    margin-left: 0;
+    width: 100%;
+    /* max-width: 350px; */
+    height: 600;
+    padding: 20px;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .social {
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: auto;
+    /* justify-content: center; */
+  }
+
+  .socialbutton {
+    width: 500px;
+    height: 35px;
+  }
+  .socialbutton1 {
+    width: 500px;
+    height: 35px;
+    /* margin-left: 50%; */
+
+
+    /* margin-bottom: 80%; */
+  }
+  .socialbutton2{
+    
+  }
+
+  .ico1{
+    position: relative;
+    height: 29px;
+    bottom: 2px;
+     width: 40px;
+    display: block;
+  }
+  .ico2 {
+    position: relative;
+    height: 29px;
+    bottom: 2px;
+     width: 40px;
+    display: block;
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+}
